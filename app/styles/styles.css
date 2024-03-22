@@ -1,0 +1,244 @@
+.btn {
+  padding: 8px 12px;
+  border: solid #f6f6f6 1px;
+}
+.btn:hover {
+  background-color: #b0b0b0;
+  color: #454545;
+}
+.btn:active {
+  background-color: transparent;
+  color: #f6f6f6;
+}
+.btn__round {
+  border-radius: 50px;
+}
+.btn__square {
+  border-radius: 8px;
+}
+.btn--no-border {
+  border: none;
+}
+.btn--login {
+  width: 100%;
+  background-color: #4452fe;
+  padding: 12px 0;
+  border-radius: 8px;
+}
+.btn--sign-up-now {
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #4452fe;
+  border: solid #4452fe 1px;
+}
+.btn--approve {
+  background-color: #b7fbdf;
+  color: #181818;
+  border-radius: 6px;
+}
+.btn--deny {
+  background-color: #ef4444;
+  color: #181818;
+  border-radius: 6px;
+}
+.btn--cancel {
+  background-color: #fddd8a;
+  color: #181818;
+  border-radius: 6px;
+}
+.btn--unavailable {
+  font-size: 12px;
+  background-color: #fddd8a;
+  color: #181818;
+  border-radius: 6px;
+}
+.btn--invitation-link {
+  background-color: transparent;
+  border-radius: 50px;
+}
+.btn--show-all {
+  background-color: #f6f6f6;
+  border-radius: 0 0 8px 8px;
+  text-align: center;
+}
+.btn--show-all__text {
+  width: 100%;
+  color: #181818;
+  cursor: pointer;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #181818;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+button,
+span,
+label,
+th,
+td {
+  color: #f6f6f6;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+h1 {
+  font-size: 3.125rem;
+  font-size: clamp(3.125rem, 2.5892857143rem + 2.6785714286vw, 5rem);
+}
+
+h2 {
+  font-size: 3rem;
+  font-size: clamp(3rem, 2.7142857143rem + 1.4285714286vw, 4rem);
+}
+
+h3 {
+  font-size: 2.25rem;
+  font-size: clamp(2.25rem, 2.0357142857rem + 1.0714285714vw, 3rem);
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 1.0357142857rem + 1.0714285714vw, 2rem);
+}
+
+p,
+li,
+a,
+span {
+  font-size: 0.75rem;
+  font-size: clamp(0.75rem, 0.6785714286rem + 0.3571428571vw, 1rem);
+}
+
+.login-page {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.login-page .login-img {
+  grid-column: 1/8;
+}
+.login-page .mb-12 {
+  margin-bottom: 12px;
+}
+.login-page .mb-24 {
+  margin-bottom: 24px;
+}
+.login-page .flex {
+  display: flex;
+}
+.login-page .flex--right {
+  justify-content: end;
+}
+.login-page .flex--center {
+  justify-content: center;
+  align-items: center;
+}
+.login-page .link--black-500 {
+  color: #6d6d6d;
+}
+.login-page .link--blue-500 {
+  color: #4452fe;
+}
+.login-page section {
+  grid-column: 8/13;
+  width: 100%;
+  padding: 0 24px;
+  margin: auto;
+}
+.login-page section .login-form .logo-frame {
+  margin-bottom: 48px;
+}
+.login-page section .login-form .logo-frame .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-page section .login-form .logo-frame .logo span {
+  font-size: 24px;
+}
+.login-page section .login-form .logo-frame .message {
+  text-align: center;
+}
+.login-page section .login-form .logo-frame .message span {
+  color: #6d6d6d;
+}
+.login-page section .login-form .input-field label {
+  color: #6d6d6d;
+}
+.login-page section .login-form .input-field input {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 48px;
+  border-radius: 8px;
+}
+.login-page .divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 24px 0;
+}
+.login-page .divider .horizontal-line {
+  width: 100%;
+  border-bottom: solid 0.5px #f6f6f6;
+}
+.login-page .error-message {
+  color: #ef4444;
+}
+@media screen and (max-width: 786px) {
+  .login-page .login-img {
+    display: none;
+  }
+  .login-page section {
+    grid-column: 1/13;
+    max-width: 500px;
+  }
+}/*# sourceMappingURL=styles.css.map */
