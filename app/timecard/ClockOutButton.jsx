@@ -1,4 +1,5 @@
 "use client"
+
 import { clockOut } from "@/utils/actions";
 
 export default function ClockOutButton({ currentWorker, handleCheckOut }) {

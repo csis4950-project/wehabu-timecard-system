@@ -48,7 +48,6 @@ export async function clockOut(formData) {
   const id = formData.get("workTimeId");
   validateClockOutButton(id);
   const workTime = await updateEndTimeOfWorkTime(id);
-  console.log('workTime', workTime);
   revalidatePath("/timecard");
   return workTime;
 }

@@ -1,4 +1,5 @@
 "use client"
+
 import { clockIn } from "@/utils/actions";
 
 export default function ClockInButton({ selectedDepartment, worker, handleClockIn }) {
