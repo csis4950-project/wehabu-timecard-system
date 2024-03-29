@@ -61,6 +61,7 @@ model Department {
   announcedDepartment Announcement[] @relation("departmentId")
   shiftDepartment Shift[] @relation("departmentId")
   requestDepartment Request[] @relation("departmentId")
+  workerDepartment WorkTime[] @relation("departmentId")
 }
 
 model Role {
@@ -132,13 +133,14 @@ model WorkTime {
   userId         String
   departmentId   String
   startTime      DateTime
-  endTime        DateTime
+  endTime        DateTime?
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
   deletedAt      DateTime?
 
   // relations
   workedUser User @relation("userId", fields: [userId], references: [id])
+  workerDepartment Department @relation("departmentId", fields: [departmentId], references: [id])
 }
 
 model Availability {

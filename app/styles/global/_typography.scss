@@ -1,6 +1,10 @@
 h1 {
   font-size: 3.125rem;
-  font-size: clamp(3.125rem, 2.5892857142857144rem + 2.6785714285714284vw, 5rem);
+  font-size: clamp(
+    3.125rem,
+    2.5892857142857144rem + 2.6785714285714284vw,
+    5rem
+  );
 }
 
 h2 {
@@ -21,7 +25,13 @@ h4 {
 p,
 li,
 a,
-span {
+span,
+label,
+select {
   font-size: 0.75rem;
-  font-size: clamp(0.75rem, 0.6785714285714286rem + 0.35714285714285715vw, 1rem);
+  font-size: clamp(
+    0.75rem,
+    0.6785714285714286rem + 0.35714285714285715vw,
+    1rem
+  );
 }

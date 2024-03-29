@@ -83,4 +83,9 @@
     color: $black-950;
     cursor: pointer;
   }
+
+  &--unclickable {
+    pointer-events: none;
+    opacity: 0.3;
+  }
 }

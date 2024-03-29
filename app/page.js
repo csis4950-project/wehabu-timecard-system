@@ -1,7 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
 import LoginFrom from "./LoginForm";
-
 
 export default async function Login() {
   return (
@@ -37,14 +35,6 @@ export default async function Login() {
           </div>
           <LoginFrom />
         </div>
-        <div className="divider">
-          <div className="horizontal-line"></div>
-          <span>OR</span>
-          <span className="horizontal-line"></span>
-        </div>
-        <button className="btn--sign-up-now">
-          <Link className="link link--blue-500" href="/sign-up">Sign up now</Link>
-        </button>
       </section>
     </div>
   )

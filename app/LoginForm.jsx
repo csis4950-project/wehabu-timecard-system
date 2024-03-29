@@ -30,9 +30,6 @@ export default function LoginFrom() {
           <input type="password" id="password" name="password" required></input>
         </div>
       </div>
-      <div className="flex flex--right mb-24">
-        <Link className="link link__forget-password link--black-500" href="/">Forgot password?</Link>
-      </div>
       {error && <span className="error-message">{error}</span>}
       <button className="btn--login" type="submit"><span>Login</span></button>
     </form>
