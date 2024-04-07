@@ -2,6 +2,8 @@
 
 Wehabu Timecard is a clock in/out system built with Next.js, integrated within the Wehabu Platform.
 
+Site Link: Wehabu Timecard System - https://wehabu-timecard-system.vercel.app/
+
 ## 1 Technologies
 
 - Next.js (14.1.0)
